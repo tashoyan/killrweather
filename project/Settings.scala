@@ -18,7 +18,7 @@ import scala.language.postfixOps
 
 import sbt._
 import sbt.Keys._
-import net.virtualvoid.sbt.graph.Plugin.graphSettings
+import net.virtualvoid.sbt.graph.DependencyGraphSettings.graphSettings
 import com.scalapenos.sbt.prompt.SbtPrompt.autoImport._
 
 object Settings extends Build {
