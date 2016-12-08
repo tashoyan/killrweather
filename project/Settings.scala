@@ -19,7 +19,7 @@ import scala.language.postfixOps
 import sbt._
 import sbt.Keys._
 import net.virtualvoid.sbt.graph.DependencyGraphSettings.graphSettings
-import com.scalapenos.sbt.prompt.SbtPrompt.autoImport._
+//import com.scalapenos.sbt.prompt.SbtPrompt.autoImport._
 
 object Settings extends Build {
 
@@ -30,8 +30,8 @@ object Settings extends Build {
     organizationHomepage := Some(url("http://www.github.com/killrweather/killrweather")),
     scalaVersion := Versions.Scala,
     homepage := Some(url("https://github.com/killrweather/killrweather")),
-    licenses := Seq(("Apache License, Version 2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))),
-    promptTheme := ScalapenosTheme
+    licenses := Seq(("Apache License, Version 2.0", url("http://www.apache.org/licenses/LICENSE-2.0")))/*,
+    promptTheme := ScalapenosTheme*/
   )
 
   override lazy val settings = super.settings ++ buildSettings
